@@ -35,7 +35,7 @@ public class TestBase {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
-            options.setHeadless(false);
+            options.setHeadless(true);
 
             WebDriver delegate = new ChromeDriver(options);
             driver = SelfHealingDriver.create(delegate);
