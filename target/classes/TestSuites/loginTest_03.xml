@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="loginTest_03.xml">
+    <test verbose="2" preserve-order="true"
+          name="Login Unsuccessful invalid email todo">
+        <parameter name = "email" value="wrong_email"/>
+        <parameter name = "password" value=""/>
+        <classes>
+            <class name="LoginTest">
+                <methods>
+                    <include name="userHitsLogInLink"/>
+                    <include name="userEntersEmail"/>
+                    <include name="userEntersPassword"/>
+                    <include name="userClickLoginButton"/>
+                    <include name="invalidEmailAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

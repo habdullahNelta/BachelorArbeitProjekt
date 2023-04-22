@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-22T23:07:59 MESZ" name="loginTest_01.xml" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="1514">
+    <groups>
+    </groups>
+    <test started-at="2023-04-22T23:07:59 MESZ" name="Login User with correct email and password" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="1514">
+      <class name="LoginTest">
+        <test-method is-config="true" signature="init_driver()[pri:0, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:07:54 MESZ" name="init_driver" finished-at="2023-04-22T23:07:59 MESZ" duration-ms="5093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init_driver -->
+        <test-method signature="userHitsLogInLink()[pri:1, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userHitsLogInLink" finished-at="2023-04-22T23:08:00 MESZ" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userHitsLogInLink -->
+        <test-method signature="userEntersEmail(java.lang.String)[pri:2, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userEntersEmail" finished-at="2023-04-22T23:08:00 MESZ" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester@test.de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userEntersEmail -->
+        <test-method signature="userEntersPassword(java.lang.String)[pri:3, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userEntersPassword" finished-at="2023-04-22T23:08:00 MESZ" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userEntersPassword -->
+        <test-method signature="userClickLoginButton()[pri:4, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userClickLoginButton" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userClickLoginButton -->
+        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:01 MESZ" name="QuitDriver" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+      </class> <!-- LoginTest -->
+    </test> <!-- Login User with correct email and password -->
+  </suite> <!-- loginTest_01.xml -->
+</testng-results>

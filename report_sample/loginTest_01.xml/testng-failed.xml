@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [loginTest_01.xml]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Login User with correct email and password(failed)" verbose="0">
+    <parameter name="password" value="123456789"/>
+    <parameter name="email" value="tester@test.de"/>
+    <classes>
+      <class name="LoginTest">
+        <methods>
+          <include name="init_driver"/>
+          <include name="QuitDriver"/>
+          <include name="userClickLoginButton"/>
+        </methods>
+      </class> <!-- LoginTest -->
+    </classes>
+  </test> <!-- Login User with correct email and password(failed) -->
+</suite> <!-- Failed suite [loginTest_01.xml] -->
