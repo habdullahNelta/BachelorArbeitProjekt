@@ -9,7 +9,7 @@ import java.util.Properties;
 public class LoadData {
 
     public static Properties userData = loadProperties(System.getProperty("user.dir") +
-            "/src/test/resources/config.properties");
+            "\\src\\test\\resources\\config.properties");
 
     private static Properties loadProperties(String path) {
         Properties pro = new Properties();

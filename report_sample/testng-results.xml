@@ -1,51 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-22T23:07:59 MESZ" name="loginTest_01.xml" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="1514">
+  <suite started-at="2023-05-01T19:38:09 MESZ" name="loginTest_03" finished-at="2023-05-01T19:38:11 MESZ" duration-ms="1975">
     <groups>
+      <group name="LoginWithIncorrectEmailAndPassword">
+        <method signature="LoginTest.userHitsLogInLink()[pri:1, instance:LoginTest@557caf28]" name="userHitsLogInLink" class="LoginTest"/>
+        <method signature="LoginTest.userEntersEmail(java.lang.String)[pri:2, instance:LoginTest@557caf28]" name="userEntersEmail" class="LoginTest"/>
+        <method signature="LoginTest.userEntersPassword(java.lang.String)[pri:3, instance:LoginTest@557caf28]" name="userEntersPassword" class="LoginTest"/>
+        <method signature="LoginTest.userClickLoginButton()[pri:4, instance:LoginTest@557caf28]" name="userClickLoginButton" class="LoginTest"/>
+      </group> <!-- LoginWithIncorrectEmailAndPassword -->
+      <group name="LoginWithCorrectEmailAndPassword">
+        <method signature="LoginTest.userHitsLogInLink()[pri:1, instance:LoginTest@557caf28]" name="userHitsLogInLink" class="LoginTest"/>
+        <method signature="LoginTest.userEntersEmail(java.lang.String)[pri:2, instance:LoginTest@557caf28]" name="userEntersEmail" class="LoginTest"/>
+        <method signature="LoginTest.userEntersPassword(java.lang.String)[pri:3, instance:LoginTest@557caf28]" name="userEntersPassword" class="LoginTest"/>
+        <method signature="LoginTest.userClickLoginButton()[pri:4, instance:LoginTest@557caf28]" name="userClickLoginButton" class="LoginTest"/>
+      </group> <!-- LoginWithCorrectEmailAndPassword -->
+      <group name="LoginUnsuccessfulInvalidEmail">
+        <method signature="LoginTest.userHitsLogInLink()[pri:1, instance:LoginTest@557caf28]" name="userHitsLogInLink" class="LoginTest"/>
+        <method signature="LoginTest.userEntersEmail(java.lang.String)[pri:2, instance:LoginTest@557caf28]" name="userEntersEmail" class="LoginTest"/>
+        <method signature="LoginTest.userEntersPassword(java.lang.String)[pri:3, instance:LoginTest@557caf28]" name="userEntersPassword" class="LoginTest"/>
+        <method signature="LoginTest.userClickLoginButton()[pri:4, instance:LoginTest@557caf28]" name="userClickLoginButton" class="LoginTest"/>
+        <method signature="LoginTest.invalidEmailAddress()[pri:7, instance:LoginTest@557caf28]" name="invalidEmailAddress" class="LoginTest"/>
+      </group> <!-- LoginUnsuccessfulInvalidEmail -->
     </groups>
-    <test started-at="2023-04-22T23:07:59 MESZ" name="Login User with correct email and password" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="1514">
+    <test started-at="2023-05-01T19:38:09 MESZ" name="Login Unsuccessful invalid email" finished-at="2023-05-01T19:38:11 MESZ" duration-ms="1975">
       <class name="LoginTest">
-        <test-method is-config="true" signature="init_driver()[pri:0, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:07:54 MESZ" name="init_driver" finished-at="2023-04-22T23:07:59 MESZ" duration-ms="5093" status="PASS">
+        <test-method is-config="true" signature="init_driver()[pri:0, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:06 MESZ" name="init_driver" finished-at="2023-05-01T19:38:09 MESZ" duration-ms="3267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init_driver -->
-        <test-method signature="userHitsLogInLink()[pri:1, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userHitsLogInLink" finished-at="2023-04-22T23:08:00 MESZ" duration-ms="702" status="PASS">
+        <test-method signature="userHitsLogInLink()[pri:1, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:09 MESZ" name="userHitsLogInLink" groups="LoginWithCorrectEmailAndPassword, LoginWithIncorrectEmailAndPassword, LoginUnsuccessfulInvalidEmail" finished-at="2023-05-01T19:38:10 MESZ" duration-ms="815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userHitsLogInLink -->
-        <test-method signature="userEntersEmail(java.lang.String)[pri:2, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userEntersEmail" finished-at="2023-04-22T23:08:00 MESZ" duration-ms="127" status="PASS">
+        <test-method signature="userEntersEmail(java.lang.String)[pri:2, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:10 MESZ" name="userEntersEmail" groups="LoginWithCorrectEmailAndPassword, LoginWithIncorrectEmailAndPassword, LoginUnsuccessfulInvalidEmail" finished-at="2023-05-01T19:38:10 MESZ" duration-ms="102" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tester@test.de]]>
+                <![CDATA[wrong_email]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userEntersEmail -->
-        <test-method signature="userEntersPassword(java.lang.String)[pri:3, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userEntersPassword" finished-at="2023-04-22T23:08:00 MESZ" duration-ms="139" status="PASS">
+        <test-method signature="userEntersPassword(java.lang.String)[pri:3, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:10 MESZ" name="userEntersPassword" groups="LoginWithCorrectEmailAndPassword, LoginWithIncorrectEmailAndPassword, LoginUnsuccessfulInvalidEmail" finished-at="2023-05-01T19:38:10 MESZ" duration-ms="110" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[123456789]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userEntersPassword -->
-        <test-method signature="userClickLoginButton()[pri:4, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:00 MESZ" name="userClickLoginButton" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="489" status="PASS">
+        <test-method signature="userClickLoginButton()[pri:4, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:10 MESZ" name="userClickLoginButton" groups="LoginWithCorrectEmailAndPassword, LoginWithIncorrectEmailAndPassword, LoginUnsuccessfulInvalidEmail" finished-at="2023-05-01T19:38:11 MESZ" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userClickLoginButton -->
-        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:LoginTest@776aec5c]" started-at="2023-04-22T23:08:01 MESZ" name="QuitDriver" finished-at="2023-04-22T23:08:01 MESZ" duration-ms="301" status="PASS">
+        <test-method signature="invalidEmailAddress()[pri:7, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:11 MESZ" name="invalidEmailAddress" groups="LoginUnsuccessfulInvalidEmail" finished-at="2023-05-01T19:38:11 MESZ" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailAddress -->
+        <test-method is-config="true" signature="QuitDriver(java.lang.String)[pri:0, instance:LoginTest@557caf28]" started-at="2023-05-01T19:38:11 MESZ" name="QuitDriver" finished-at="2023-05-01T19:38:12 MESZ" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/main/resources/TestSuites/LoginTest_03.xml]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitDriver -->
       </class> <!-- LoginTest -->
-    </test> <!-- Login User with correct email and password -->
-  </suite> <!-- loginTest_01.xml -->
+    </test> <!-- Login Unsuccessful invalid email -->
+  </suite> <!-- loginTest_03 -->
 </testng-results>

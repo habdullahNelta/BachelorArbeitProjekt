@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [loginTest_02]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Login User with Incorrect email and password(failed)" verbose="0">
+    <parameter name="password" value="wrong"/>
+    <parameter name="email" value="wrong@test.de"/>
+    <groups>
+      <run>
+        <include name="LoginWithIncorrectEmailAndPassword"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="LoginTest">
+        <methods>
+          <include name="loginShouldBeUnsuccessful"/>
+          <include name="init_driver"/>
+          <include name="QuitDriver"/>
+        </methods>
+      </class> <!-- LoginTest -->
+    </classes>
+  </test> <!-- Login User with Incorrect email and password(failed) -->
+</suite> <!-- Failed suite [loginTest_02] -->

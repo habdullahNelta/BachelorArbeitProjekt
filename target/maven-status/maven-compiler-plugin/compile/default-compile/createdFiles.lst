@@ -1,3 +1,4 @@
-Page\LoginPage.class
-Page\MainPage.class
+Pages\MainPage.class
+qa\util\Logger.class
+Pages\LoginPage.class
 qa\util\LoadData.class

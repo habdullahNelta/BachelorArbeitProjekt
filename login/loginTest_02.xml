@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="loginTest_02">
+    <test verbose="2" preserve-order="true"
+          name="Login User with incorrect email and password">
+        <parameter name = "email" value="wrong@test.de"/>
+        <parameter name = "password" value="wrong"/>
+        <classes>
+            <class name="LoginTest">
+                <methods>
+                    <include name="userHitsLogInLink"/>
+                    <include name="userEntersEmail"/>
+                    <include name="userEntersPassword"/>
+                    <include name="userClickLoginButton"/>
+                    <include name="loginShouldBeUnsuccessful"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
